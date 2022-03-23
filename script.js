@@ -1,4 +1,3 @@
-var numero = parseInt(prompt('Digite um número'))
-numero % 2 == 0
-  ? console.log(numero + ' é um número par')
-  : console.log(numero + ' é um número ímpar')
+for (let i = 0; i <= 20; i++) {
+  console.log('2 vezes', i, 'é igual a:', 2 * i)
+}
