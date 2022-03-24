@@ -1,13 +1,12 @@
-var animais = [
-  { animal: 'Cachorro', raca: 'Akita' },
-  { animal: 'Cachorro', raca: 'Boxer' },
-  { animal: 'Cachorro', raca: 'Dálmata' },
-  { animal: 'Cachorro', raca: 'Pastor alemão' },
-  { animal: 'Gato', raca: 'Persa' },
-  { animal: 'Gato', raca: 'Sphynx' },
-  { animal: 'Gato', raca: 'Siamês' }
-]
+var impares = 0
+var contador = 0
 
-animais.forEach(function (element) {
-  console.log(`Animal: ${element.animal}, Raça: ${element.raca}`)
-})
+while (impares < 10) {
+  if (contador % 2 != 0) {
+    impares++
+  }
+
+  console.log(`Ímpares: ${impares} \nContador: ${contador}`)
+
+  contador++
+}
