@@ -1,12 +1,5 @@
-var impares = 0
-var contador = 0
+const fahrenheit = [0, 32, 45, 50, 75, 80, 99, 120]
 
-while (impares < 10) {
-  if (contador % 2 != 0) {
-    impares++
-  }
+const celsius = fahrenheit.map(element => Math.round(((element - 32) * 5) / 9))
 
-  console.log(`Ímpares: ${impares} \nContador: ${contador}`)
-
-  contador++
-}
+console.log(`Array fahrenheit: ${fahrenheit} \nArray celsius: ${celsius}`)
