@@ -8,12 +8,8 @@ cidades = [
   { nome: 'Pato Branco', populacao: 84779 }
 ]
 
-const cidadesFiltradas = cidades.filter(cidade => {
-  if (cidade.populacao > 200000) {
-    return cidade
-  }
-})
+const busca = cidades.some(
+  cidade => cidade.nome.toLowerCase() === 'florianópolis'
+)
 
-cidadesFiltradas.sort((a, b) => b.populacao - a.populacao)
-
-console.log(cidadesFiltradas)
+console.log(busca)
